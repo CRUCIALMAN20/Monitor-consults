@@ -302,12 +302,12 @@ document.addEventListener('DOMContentLoaded', function() {
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        background: #2563eb;
+        background: #0891b2;
         color: white;
         border: none;
         font-size: 1.25rem;
         cursor: pointer;
-        box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+        box-shadow: 0 4px 12px rgba(8, 145, 178, 0.3);
         z-index: 1000;
         opacity: 0;
         transform: translateY(20px);
@@ -337,11 +337,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add hover effect to scroll-to-top button
     scrollToTopButton.addEventListener('mouseenter', function() {
         this.style.transform = 'translateY(-2px)';
-        this.style.boxShadow = '0 6px 20px rgba(37, 99, 235, 0.4)';
+        this.style.boxShadow = '0 6px 20px rgba(8, 145, 178, 0.4)';
     });
     
     scrollToTopButton.addEventListener('mouseleave', function() {
         this.style.transform = 'translateY(0)';
-        this.style.boxShadow = '0 4px 12px rgba(37, 99, 235, 0.3)';
+        this.style.boxShadow = '0 4px 12px rgba(8, 145, 178, 0.3)';
     });
 });
