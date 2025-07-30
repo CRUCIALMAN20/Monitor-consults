@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services & Pricing - Monitor Consults</title>
+    <meta name="description" content="Detailed services and pricing information for Monitor Consults professional consulting services.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .pricing-hero {
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+        
+        .pricing-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border: 2px solid #e2e8f0;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            border-color: #2563eb;
+            box-shadow: 0 20px 40px rgba(37, 99, 235, 0.15);
+        }
+        
+        .pricing-card.featured {
+            border-color: #2563eb;
+            transform: scale(1.05);
+        }
+        
+        .pricing-card.featured::before {
+            content: "Most Popular";
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #2563eb;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+        
+        .service-title {
+            font-size: 1.5rem;
+            color: #1e293b;
+            margin-bottom: 1rem;
+        }
+        
+        .service-price {
+            font-size: 2rem;
+            color: #2563eb;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .price-period {
+            color: #64748b;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+        
+        .service-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+        
+        .service-features li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+            color: #475569;
+        }
+        
+        .service-features li i {
+            color: #10b981;
+            margin-right: 0.75rem;
+            font-size: 1rem;
+        }
+        
+        .consultation-section {
+            background: #f8fafc;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .process-step {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: #2563eb;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 auto 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <img src="assets/logo.png" alt="Monitor Consults" class="logo">
+                        <span class="logo-text">Monitor Consults</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="index.html#team">Team</a></li>
+                    <li><a href="index.html#clients">Clients</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="#consultation" class="btn-primary">Book Consultation</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Pricing Hero -->
+    <section class="pricing-hero">
+        <div class="container">
+            <h1>Services & Pricing</h1>
+            <p>Transparent pricing for professional consulting services tailored to your needs</p>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+        <div class="container">
+            <div class="pricing-grid">
+                <!-- Project Planning -->
+                <div class="pricing-card">
+                    <h3 class="service-title">Project Planning & Implementation</h3>
+                    <div class="service-price">$1,500 - $5,000</div>
+                    <div class="price-period">Per project (based on scope)</div>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i>Comprehensive project frameworks</li>
+                        <li><i class="fas fa-check"></i>Timeline and budget planning</li>
+                        <li><i class="fas fa-check"></i>Risk assessment & mitigation</li>
+                        <li><i class="fas fa-check"></i>Stakeholder mapping</li>
+                        <li><i class="fas fa-check"></i>Implementation roadmap</li>
+                        <li><i class="fas fa-check"></i>Progress monitoring tools</li>
+                    </ul>
+                    <a href="#consultation" class="btn-primary">Get Quote</a>
+                </div>
+
+                <!-- M&E -->
+                <div class="pricing-card featured">
+                    <h3 class="service-title">Monitoring & Evaluation System</h3>
+                    <div class="service-price">$2,000 - $8,000</div>
+                    <div class="price-period">Per system setup</div>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i>Theory of Change development</li>
+                        <li><i class="fas fa-check"></i>Logical framework design</li>
+                        <li><i class="fas fa-check"></i>KPI identification & tracking</li>
+                        <li><i class="fas fa-check"></i>Data collection tools</li>
+                        <li><i class="fas fa-check"></i>Custom dashboards</li>
+                        <li><i class="fas fa-check"></i>Impact measurement framework</li>
+                        <li><i class="fas fa-check"></i>Staff training included</li>
+                    </ul>
+                    <a href="#consultation" class="btn-primary">Get Quote</a>
+                </div>
+
+                <!-- Research -->
+                <div class="pricing-card">
+                    <h3 class="service-title">Research & Evidence Services</h3>
+                    <div class="service-price">$100 - $150</div>
+                    <div class="price-period">Per day</div>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i>Qualitative & quantitative research</li>
+                        <li><i class="fas fa-check"></i>Survey design & implementation</li>
+                        <li><i class="fas fa-check"></i>Data analysis & reporting</li>
+                        <li><i class="fas fa-check"></i>Literature reviews</li>
+                        <li><i class="fas fa-check"></i>Baseline & endline studies</li>
+                        <li><i class="fas fa-check"></i>Executive summaries</li>
+                    </ul>
+                    <a href="#consultation" class="btn-primary">Get Quote</a>
+                </div>
+
+                <!-- Startup Operations -->
+                <div class="pricing-card">
+                    <h3 class="service-title">Startup Operations Setup</h3>
+                    <div class="service-price">$3,000 - $10,000</div>
+                    <div class="price-period">Complete package</div>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i>Operational workflow design</li>
+                        <li><i class="fas fa-check"></i>Standard Operating Procedures</li>
+                        <li><i class="fas fa-check"></i>Quality management systems</li>
+                        <li><i class="fas fa-check"></i>Performance metrics setup</li>
+                        <li><i class="fas fa-check"></i>Team structure & roles</li>
+                        <li><i class="fas fa-check"></i>3-month support included</li>
+                    </ul>
+                    <a href="#consultation" class="btn-primary">Get Quote</a>
+                </div>
+
+                <!-- Training -->
+                <div class="pricing-card">
+                    <h3 class="service-title">Training & Capacity Building</h3>
+                    <div class="service-price">$800 - $2,000</div>
+                    <div class="price-period">Per training session</div>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i>Project management training</li>
+                        <li><i class="fas fa-check"></i>M&E skills development</li>
+                        <li><i class="fas fa-check"></i>Data collection training</li>
+                        <li><i class="fas fa-check"></i>Report writing workshops</li>
+                        <li><i class="fas fa-check"></i>Customized curricula</li>
+                        <li><i class="fas fa-check"></i>Materials & certificates</li>
+                    </ul>
+                    <a href="#consultation" class="btn-primary">Get Quote</a>
+                </div>
+
+                <!-- Documentation -->
+                <div class="pricing-card">
+                    <h3 class="service-title">Documentation & Admin Support</h3>
+                    <div class="service-price">$75 - $120</div>
+                    <div class="price-period">Per hour</div>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i>Grant proposal writing</li>
+                        <li><i class="fas fa-check"></i>Policy development</li>
+                        <li><i class="fas fa-check"></i>Report writing & editing</li>
+                        <li><i class="fas fa-check"></i>Donor communications</li>
+                        <li><i class="fas fa-check"></i>Compliance documentation</li>
+                        <li><i class="fas fa-check"></i>Quality assurance review</li>
+                    </ul>
+                    <a href="#consultation" class="btn-primary">Get Quote</a>
+                </div>
+            </div>
+
+            <!-- Package Deals -->
+            <div class="custom-solution">
+                <h3>Package Deals & Long-term Partnerships</h3>
+                <p>Save up to 25% with our comprehensive service packages and retainer agreements</p>
+                <div class="solution-buttons">
+                    <a href="#consultation" class="btn-primary">Discuss Package Deal</a>
+                    <a href="index.html#contact" class="btn-secondary">Contact for Custom Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Process -->
+    <section id="consultation" class="consultation-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>How Our Consultation Process Works</h2>
+                <p>Simple, transparent process to get you the expert support you need</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h4>Initial Consultation</h4>
+                    <p>Free 30-minute consultation to understand your needs and challenges</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h4>Proposal & Quote</h4>
+                    <p>Detailed proposal with scope, timeline, and transparent pricing</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h4>Agreement & Kickoff</h4>
+                    <p>Sign agreement and begin work with clear milestones and deliverables</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h4>Delivery & Support</h4>
+                    <p>Regular updates, on-time delivery, and ongoing support as needed</p>
+                </div>
+            </div>
+            
+            <div class="cta-buttons">
+                <a href="index.html#contact" class="btn-primary">Book Free Consultation</a>
+                <a href="index.html#contact" class="btn-secondary">Request Custom Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/logo.png" alt="Monitor Consults">
+                        <span>Monitor Consults</span>
+                    </div>
+                    <p>Managing what matters; Delivering Impact that lasts.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#pricing">Project Planning</a></li>
+                        <li><a href="#pricing">Monitoring & Evaluation</a></li>
+                        <li><a href="#pricing">Research & Evidence</a></li>
+                        <li><a href="#pricing">Startup Operations</a></li>
+                        <li><a href="#pricing">Training & Capacity Building</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#team">Our Team</a></li>
+                        <li><a href="index.html#clients">Clients</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="#consultation">Book Consultation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Nairobi, Kenya</p>
+                    <p>info@monitorconsults.com</p>
+                    <p>+254 XXX XXX XXX</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Monitor Consults. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
