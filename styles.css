@@ -1616,3 +1616,213 @@ p {
 html {
     scroll-padding-top: 80px;
 }
+
+/* Projects Section */
+.projects {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.project-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    position: relative;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(8, 145, 178, 0.15);
+    border-color: #0891b2;
+}
+
+.project-card.highlighted {
+    border-color: #0891b2;
+    background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
+}
+
+.project-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #0891b2, #22d3ee);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 12px rgba(8, 145, 178, 0.2);
+}
+
+.project-icon i {
+    font-size: 1.75rem;
+    color: white;
+}
+
+.project-card h3 {
+    font-size: 1.4rem;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.project-org {
+    color: #0891b2;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.project-description {
+    color: #475569;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.project-stakeholders {
+    background: #f1f5f9;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: #475569;
+    margin-bottom: 1rem;
+}
+
+.project-stakeholders strong {
+    color: #1e293b;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #0891b2;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    color: #0e7490;
+    gap: 0.75rem;
+}
+
+.project-link i {
+    font-size: 0.85rem;
+}
+
+.projects-summary {
+    margin-top: 4rem;
+    padding: 3rem 2rem;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.projects-summary h3 {
+    font-size: 2rem;
+    color: #1e293b;
+    margin-bottom: 2.5rem;
+    font-weight: 700;
+}
+
+.summary-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.summary-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.summary-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(8, 145, 178, 0.12);
+}
+
+.summary-item i {
+    font-size: 2.5rem;
+    color: #0891b2;
+}
+
+.summary-item h4 {
+    font-size: 2rem;
+    color: #1e293b;
+    margin-bottom: 0.25rem;
+    font-weight: 700;
+}
+
+.summary-item p {
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments for Projects section */
+@media (max-width: 768px) {
+    .projects {
+        padding: 60px 0;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+    
+    .project-card {
+        padding: 1.5rem;
+    }
+    
+    .project-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .projects-summary {
+        margin-top: 3rem;
+        padding: 2rem 1.5rem;
+    }
+    
+    .projects-summary h3 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .summary-stats {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .summary-item {
+        padding: 1rem;
+    }
+    
+    .summary-item i {
+        font-size: 2rem;
+    }
+    
+    .summary-item h4 {
+        font-size: 1.5rem;
+    }
+}
